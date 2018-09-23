@@ -1,31 +1,50 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <TopBar/>
+    <div>
+      <transition name="show" mode="out-in" tag="div">
+        <router-view/>
+      </transition>
     </div>
-    <router-view/>
   </div>
 </template>
 
+<script>
+import TopBar from '@/components/TopBar.vue'
+export default {
+  name: 'app',
+  components: {
+    TopBar
+  }
+}
+</script>
+
 <style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic,cyrillic-ext');
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.show-enter-active, .show-leave-active {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+.show-enter {
+  -webkit-transform: translateX(-100px);
+  transform: translateX(-100px);
+  opacity: 0;
+}
+
+.show-leave-to {
+  -webkit-transform: translateX(100px);
+  transform: translateX(100px);
+  opacity: 0;
 }
 </style>
