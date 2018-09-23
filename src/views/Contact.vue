@@ -1,27 +1,12 @@
 <template>
   <div class="contact">
-    <div class="contact-item">
-      <a href="mailto:mak.ivanov@gmail.com" target="">
-        <font-awesome-icon icon="envelope" class="icon alt"/>
-        <span>mak.ivanov@gmail.com</span>
-      </a>
-    </div>
-    <div class="contact-item">
-      <a href="https://github.com/splincool" target="_blank">
-        <font-awesome-icon :icon="['fab', 'github']" class="icon alt"/>
-        <span>splincool</span>
-      </a>
-    </div>
-    <div class="contact-item">
-      <a href="skype:mak.ivanov?chat">
-        <font-awesome-icon :icon="['fab', 'skype']" class="icon alt"/>
-        <span>mak.ivanov</span>
-      </a>
-    </div>
-    <div class="contact-item">
-      <a href="https://vk.com/id46847113" target="_blank">
-        <font-awesome-icon :icon="['fab', 'vk']" class="icon alt"/>
-        <span>splincool</span>
+    <div 
+      v-for="(contact, idx) in contacts"
+      :key="idx"
+      class="contact-item">
+      <a :href="contact.href" :target="contact.target">
+        <font-awesome-icon :icon="contact.icon" class="icon alt"/>
+        <span>{{contact.title}}</span>
       </a>
     </div>
   </div>
@@ -29,7 +14,37 @@
 
 <script>
 export default {
-  name: 'contact'
+  name: 'contact',
+  data () {
+    return {
+      contacts: [
+        {
+          title: 'mak.ivanov@gmail.com',
+          href: 'mailto:mak.ivanov@gmail.com',
+          icon: 'envelope',
+          target: ''
+        },
+        {
+          title: 'splincool',
+          href: 'https://github.com/splincool',
+          icon: ['fab', 'github'],
+          target: '_blank'
+        },
+        {
+          title: 'mak.ivanov',
+          href: 'skype:mak.ivanov?chat',
+          icon: ['fab', 'skype'],
+          target: ''
+        },
+        {
+          title: 'splincool',
+          href: 'https://vk.com/id46847113',
+          icon: ['fab', 'vk'],
+          target: '_blank'
+        },
+      ]
+    }
+  }
 }
 </script>
 

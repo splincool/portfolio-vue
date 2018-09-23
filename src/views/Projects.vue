@@ -1,34 +1,12 @@
 <template>
   <div class="projects">
-    <a 
-      target="_blank" 
-      href="projects/twitch/index.html" 
-      class="project">
-      <img src="@/assets/twitch.png" alt='twitch'/>
-      <h3>Twitch Vue app</h3>
-    </a>
-    <a 
-      target="_blank" 
-      href="projects/memory-cards/index.html" 
-      class="project">
-      <img src="@/assets/memory-cards.png" alt='memory-cards'/>
-      <h3>Memory cards Vue app</h3>
-    </a>
-    <a 
-      target="_blank" 
-      href="projects/corporate-landing-page/index.html"
-      class="project">
-      <img 
-          src="@/assets/corporate-landing-page.png" 
-          alt='corporate-landing-page'/>
-      <h3>Corporate landing page</h3>
-    </a>
-    <a       
-      target="_blank" 
-      href="projects/birds-game/index.html"
-      class="project">
-      <img src="@/assets/birds-game.png" alt='birds-game'/>
-      <h3>Birds game</h3>
+    <a v-for="(project, idx) in projects"
+      :key="idx"
+      :href="project.href" 
+      class="project"
+      target="_blank">
+      <img :src="project.src" :alt="project.title"/>
+      <h3>{{project.title}}</h3>
     </a>
   </div>
 </template>
@@ -38,7 +16,28 @@ export default {
   name: 'projects',
   data () {
     return {
-
+      projects: [
+        {
+          title: 'Twitch Vue app',
+          href: 'projects/twitch/index.html',
+          src: require('../assets/twitch.png')
+        },
+        {
+          title: 'Memory cards Vue app',
+          href: 'projects/memory-cards/index.html',
+          src: require('../assets/memory-cards.png')
+        },
+        {
+          title: 'Corporate landing page',
+          href: 'projects/corporate-landing-page/index.html',
+          src: require('../assets/corporate-landing-page.png')
+        },
+        {
+          title: 'Birds game',
+          href: 'projects/birds-game/index.html',
+          src: require('../assets/birds-game.png')
+        }
+      ]
     }
   }
 }

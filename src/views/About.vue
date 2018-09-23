@@ -7,7 +7,8 @@
         I specialize in front-end development and I will convert your brilliant design into quality and bulletproof HTML/CSS/Javascript!
       </p>
       <p>
-        I am very passion Vue.js developer and I have been working with this framework for a year. It is very interesting for me to learn new things regarding Vue and then implement all those features in SPA applications.
+        I am very passion Vue.js developer and I have been working with this framework for a year. 
+        It is very interesting for me to learn new things regarding Vue and then implement all those features in SPA applications.
       </p>
     </div>
   </div>
