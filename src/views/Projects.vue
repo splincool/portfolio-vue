@@ -2,21 +2,21 @@
   <div class="projects">
     <a 
       target="_blank" 
-      href="/twitch/index.html" 
+      href="projects/twitch/index.html" 
       class="project">
       <img src="@/assets/twitch.png" alt='twitch'/>
       <h3>Twitch Vue app</h3>
     </a>
     <a 
       target="_blank" 
-      href="/memory-cards/index.html" 
+      href="projects/memory-cards/index.html" 
       class="project">
       <img src="@/assets/memory-cards.png" alt='memory-cards'/>
       <h3>Memory cards Vue app</h3>
     </a>
     <a 
       target="_blank" 
-      href="/corporate-landing-page/index.html"
+      href="projects/corporate-landing-page/index.html"
       class="project">
       <img 
           src="@/assets/corporate-landing-page.png" 
@@ -25,7 +25,7 @@
     </a>
     <a       
       target="_blank" 
-      href="/birds-game/index.html"
+      href="projects/birds-game/index.html"
       class="project">
       <img src="@/assets/birds-game.png" alt='birds-game'/>
       <h3>Birds game</h3>
