@@ -74,4 +74,10 @@ export default {
   background: #000;
 }
 
+@media only screen and (max-width: 370px) {
+  .cool-link {
+    margin-right: 10px;
+  }
+}
+
 </style>
