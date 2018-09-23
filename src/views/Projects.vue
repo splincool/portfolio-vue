@@ -49,14 +49,14 @@ export default {
   max-width: 1050px;
 	margin: 0 auto;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	grid-gap: 10px
 }
 
 .project {
   display: flex;
   flex-direction: column;
-  width: 360px;
+  width: auto;
   text-decoration: none;
   position: relative;
   overflow: hidden;
