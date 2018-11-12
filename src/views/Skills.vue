@@ -33,6 +33,10 @@ export default {
           src: require('../assets/html5.png')
         },
         {
+          title: 'Pug',
+          src: require('../assets/pug.png')
+        },
+        {
           title: 'CSS',
           src: require('../assets/css3.png')
         },
