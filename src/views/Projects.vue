@@ -27,11 +27,11 @@ export default {
           href: 'projects/movie-network/index.html',
           src: require('../assets/movies.png')
         },
-        {
-          title: 'Memory cards Vue app',
-          href: 'projects/memory-cards/index.html',
-          src: require('../assets/memory-cards.png')
-        },
+        // {
+        //   title: 'Memory cards Vue app',
+        //   href: 'projects/memory-cards/index.html',
+        //   src: require('../assets/memory-cards.png')
+        // },
         {
           title: 'Corporate landing page',
           href: 'projects/corporate-landing-page/index.html',
