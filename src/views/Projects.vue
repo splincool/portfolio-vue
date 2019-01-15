@@ -23,6 +23,11 @@ export default {
           src: require('../assets/twitch.png')
         },
         {
+          title: 'Movies Vue app',
+          href: 'projects/movie-network/index.html',
+          src: require('../assets/movies.png')
+        },
+        {
           title: 'Memory cards Vue app',
           href: 'projects/memory-cards/index.html',
           src: require('../assets/memory-cards.png')
