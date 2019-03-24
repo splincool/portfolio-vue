@@ -29,7 +29,7 @@ export default {
   flex-direction: column;
 }
 .avatar {
-  background: url('../assets/ava.jpg');
+  background: url('../assets/avatar.jpg');
   width: 150px;
   height: 150px;
   border-radius: 100%;
